@@ -25,7 +25,7 @@ resource "aws_lb" "taskoverflow" {
 }
 
 resource "aws_security_group" "taskoverflow_lb" {
-  name        = "taskoverflow_lb"
+  name_prefix = "taskoverflow_lb"
   description = "TaskOverflow Load Balancer Security Group"
   ingress {
     from_port   = 80
